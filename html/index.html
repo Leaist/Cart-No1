@@ -3,14 +3,87 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Microsoft</title>
+      <title>购物车</title>
       <link rel="stylesheet" href="../dist/css/bootstrap.min.css" />
       <script src="../js/jquery.1.11.3.js"></script>
       <script src="../dist/js/bootstrap.min.js"></script>
       <link rel="stylesheet" href="../fonts/iconfont.css" />
-      <style></style>
+      <link rel="stylesheet" href="../css/reset.css" />
+      <link rel="stylesheet" href="../css/index.css" />
    </head>
    <body>
-       
+      <div class="nav_Wrap">
+         <div class="nav">
+            <div class="nav_left">
+               <a class="glyphicon-home" href="#">
+                  <span class="glyphicon glyphicon-home" id="glyphicon-home"></span>
+                  <span>京东首页</span>
+               </a>
+               <a href="#">网站导航<span class="glyphicon glyphicon-menu-down"></span></a>
+               <a href="#">商家入驻<span class="glyphicon glyphicon-menu-down"></span></a>
+               <a href="#">客服服务<span class="glyphicon glyphicon-menu-down"></span></a>
+            </div>
+            <div class="nav_right">
+               <span>你好，请登录</span>
+               <a href="#">免费注册</a>
+               |<a href="">我的订单</a>| <a href="">我的京东</a>| <a href="">京东会员</a>|
+               <a href="">手机京东</a>
+            </div>
+         </div>
+      </div>
+      <div class="content clean">
+         <img src="../img/logo.jpg" alt="" />
+         <div class="search_box">
+            <input type="search" class="search" placeholder="自营" />
+            <button class="search_btn">搜索</button>
+         </div>
+         <div class="search_Tips">
+            <span class="glyphicon glyphicon-alert" id="glyphicon-alert"></span>
+            <span class="search_Tips_text"
+               >您还没有登录！登录后购物车的商品将保存到您的账号中</span
+            >
+            <button class="search_Tips_login">立即登录</button>
+         </div>
+         <div class="fillter_bar">
+            <span class="fillter_bar_title"
+               >全部商品
+               <span class="fillter_bar_title num_Tips">1</span>
+            </span>
+            <div class="title_Address">
+               河南省郑州市中原区城区<span class="glyphicon glyphicon-menu-down"></span>
+            </div>
+            <span class="title_Address_n">配送至：</span>
+         </div>
+         <div class="Cart_box">
+            <div class="Cart_box_title">
+               <input type="checkbox" name="" id="shop_all" />&nbsp;全选
+               <div class="wrap_Space">商品</div>
+               <div class="wrap_Space"></div>
+               <div class="wrap_Space"></div>
+               <div class="wrap_Space"></div>
+               <div class="wrap_Space"></div>
+               <div class="wrap_Space">单价</div>
+               <div class="wrap_Space">数量</div>
+               <div class="wrap_Space"></div>
+               <div class="wrap_Space">小计</div>
+               <div class="wrap_Space">操作</div>
+            </div>
+            <div class="shop_box_l">
+               <input type="checkbox" id="shop_check" />
+               <img src="../img/1.jpg" alt="" />
+               <span>一加 OnePlus 8 5G旗舰 90Hz高清柔性屏 高通骁龙865 180g轻薄手感</span>
+               <span>【赠品】一加手机8 砂岩全包保护壳(湖青)-手机</span>
+               <span>【赠品】中国移动 免费办理 首月1元体验 30元5G流量</span>
+            </div>
+            <div class="shop_box_r">
+               <span>￥3999.00</span>
+               <div class="shop_box_Num">
+                  <span>-</span>
+                  <input type="text" id="shop_box_Val"/>
+                  <span>+</span>
+               </div>
+            </div>
+         </div>
+      </div>
    </body>
 </html>
